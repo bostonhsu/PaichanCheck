@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +66,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -82,54 +87,12 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(14, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(64, 148);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(195, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(390, 526);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(71, 14);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(136, 21);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "查询日期";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 59);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "压蜡";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 59);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "修模";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(495, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "蜡检";
             // 
             // Column1
             // 
@@ -161,6 +124,54 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 60;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(178, 28);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(268, 35);
+            this.dateTimePicker1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(60, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(106, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "查询日期";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(60, 118);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "压蜡";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(546, 118);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "修模";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(1026, 118);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "蜡检";
+            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -170,10 +181,11 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
-            this.dataGridView2.Location = new System.Drawing.Point(257, 74);
+            this.dataGridView2.Location = new System.Drawing.Point(550, 148);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(195, 263);
+            this.dataGridView2.Size = new System.Drawing.Size(390, 526);
             this.dataGridView2.TabIndex = 8;
             // 
             // dataGridViewTextBoxColumn1
@@ -215,10 +227,11 @@
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10});
-            this.dataGridView3.Location = new System.Drawing.Point(497, 74);
+            this.dataGridView3.Location = new System.Drawing.Point(1030, 148);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowTemplate.Height = 23;
-            this.dataGridView3.Size = new System.Drawing.Size(195, 263);
+            this.dataGridView3.Size = new System.Drawing.Size(390, 526);
             this.dataGridView3.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn6
@@ -260,10 +273,11 @@
             this.dataGridViewTextBoxColumn13,
             this.dataGridViewTextBoxColumn14,
             this.dataGridViewTextBoxColumn15});
-            this.dataGridView4.Location = new System.Drawing.Point(742, 74);
+            this.dataGridView4.Location = new System.Drawing.Point(1520, 148);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowTemplate.Height = 23;
-            this.dataGridView4.Size = new System.Drawing.Size(195, 263);
+            this.dataGridView4.Size = new System.Drawing.Size(390, 526);
             this.dataGridView4.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn11
@@ -305,10 +319,11 @@
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19,
             this.dataGridViewTextBoxColumn20});
-            this.dataGridView5.Location = new System.Drawing.Point(971, 74);
+            this.dataGridView5.Location = new System.Drawing.Point(1978, 148);
+            this.dataGridView5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.RowTemplate.Height = 23;
-            this.dataGridView5.Size = new System.Drawing.Size(195, 263);
+            this.dataGridView5.Size = new System.Drawing.Size(390, 526);
             this.dataGridView5.TabIndex = 11;
             // 
             // dataGridViewTextBoxColumn16
@@ -344,35 +359,93 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(740, 59);
+            this.label5.Location = new System.Drawing.Point(1516, 118);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.Size = new System.Drawing.Size(58, 24);
             this.label5.TabIndex = 12;
             this.label5.Text = "焊接";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(969, 59);
+            this.label6.Location = new System.Drawing.Point(1974, 118);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.Size = new System.Drawing.Size(58, 24);
             this.label6.TabIndex = 13;
             this.label6.Text = "制壳";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(214, 13);
+            this.button1.Location = new System.Drawing.Point(464, 26);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(150, 46);
             this.button1.TabIndex = 14;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(2125, 1027);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(159, 50);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Test";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(487, 381);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(34, 24);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "->";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(966, 381);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 24);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "->";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(1455, 381);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(34, 24);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "->";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(1932, 381);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 24);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "->";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 649);
+            this.ClientSize = new System.Drawing.Size(2384, 1298);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -386,8 +459,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -438,6 +514,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 
