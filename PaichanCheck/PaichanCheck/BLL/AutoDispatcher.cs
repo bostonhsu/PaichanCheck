@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace PaichanCheck.BLL
 {
-    class Employee
+    class AutoDispatcher
     {
-        private Worker worker;
+        public static void dispatchPlanToCompany(Plan plan, Company company)
+        {
+            company.dispatchPlan(plan);
+        }
     }
 }

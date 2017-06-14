@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\AutoDispatcher.cs" />
+    <Compile Include="BLL\Company.cs" />
+    <Compile Include="BLL\Employee.cs" />
+    <Compile Include="BLL\Plan.cs" />
+    <Compile Include="BLL\StandardTime.cs" />
+    <Compile Include="BLL\Task.cs" />
     <Compile Include="BLL\Worker.cs" />
     <Compile Include="BLL\Workshop.cs" />
     <Compile Include="Form1.cs">

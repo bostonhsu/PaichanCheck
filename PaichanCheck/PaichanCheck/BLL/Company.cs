@@ -10,5 +10,18 @@ namespace PaichanCheck.BLL
     {
         private Dictionary<String, Workshop> workshops;
 
+        internal void dispatchPlan(Plan plan)
+        {
+            dispatchPlanToWorkshop(plan);
+        }
+
+        private void dispatchPlanToWorkshop(Plan plan)
+        {
+            foreach (KeyValuePair<string, Workshop> workshopPair in workshops)
+            {
+                Workshop aWorkshop = (Workshop) workshopPair.Value;
+                aWorkshop.dispatchPlan(plan);
+            }
+        }
     }
 }

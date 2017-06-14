@@ -1,0 +1,9 @@
+AutoDispatcher  自动调度员
+Company 公司
+Employee  雇员
+Plan  计划
+Task  任务
+Worker  工位
+Workshop  车间
+StandardTime  标准工时
+Shift 班次
