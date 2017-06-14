@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PaichanCheck.BLL
 {
@@ -10,25 +7,11 @@ namespace PaichanCheck.BLL
     {
         private Dictionary<string, Task> tasks;
         private Employee employee;
-        private TimeSpan workingTimeSpan;
-
-        public Worker()
-        {
-            tasks = new Dictionary<string, Task>();
-        }
+        private DatetimeSpan workingTimeSpan;
 
         internal void eatPlan(Plan plan)
         {
-            Task aTask = new Task();
-            aTask = plan.subATimeSpanOfAWorkerAndMakeATask(workingTimeSpan);
-            try
-            {
-                tasks.Add(getUniqueIdOfTask(), aTask);
-            }
-            catch (ArgumentException)
-            {
-                
-            }
+            tasks.Add(getUniqueIdOfTask(), TaskMaker.makeTask(plan, this));
         }
 
         private string getUniqueIdOfTask()

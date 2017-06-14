@@ -1,53 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PaichanCheck.BLL
 {
-    class Plan
+    class Plan : ICloneable
     {
-        private Array _timeSpans;
+        private DateTime _startDateTime;
+        private int _totalMinutes;
+
+        public object Clone()
+        {
+            Plan plan = new Plan();
+            plan._startDateTime = _startDateTime;
+            plan._totalMinutes = _totalMinutes;
+            return plan;
+        }
         
-        public StandardTime getStandardTime()
-        {
-            return new StandardTime();
-        }
-
-        public Plan copy()
-        {
-            return new Plan();
-        }
-
         public bool isNotEmpty()
         {
-            return false;
+            return !isEmpty();
         }
 
-        public Task subATimeSpanOfAWorkerAndMakeATask(TimeSpan aTimeSpan)
+        private bool isEmpty()
         {
-            return makeATask(subATimeSpanOfAWorker(aTimeSpan));
-        }
-
-        private TimeSpan subATimeSpanOfAWorker(TimeSpan aTimeSpan)
-        {
-            return new TimeSpan();
-        }
-
-        private Task makeATask(TimeSpan aTimeSpan)
-        {
-            return new Task();
-        }
-
-        private TimeSpan getTotalTimeSpan()
-        {
-            TimeSpan result = new TimeSpan();
-            for (int i = 0; i < _timeSpans.Length; i++)
-            {
-                result += (TimeSpan)_timeSpans.GetValue(i);
-            }
-            return result;
+            return _totalMinutes <= 0;
         }
     }
 }

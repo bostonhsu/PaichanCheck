@@ -8,31 +8,27 @@ namespace PaichanCheck.BLL
 {
     class Workshop
     {
-        private Dictionary<String, Worker> workers;
+        private Dictionary<string, Team> teams;
 
-        internal void dispatchPlan(Plan plan)
+        internal void splitPlan(Plan plan)
         {
-            dispatchPlanToWorker(plan);
+            splitPlanToTeams((Plan)plan.Clone());
         }
 
-        private void dispatchPlanToWorker(Plan plan)
+        private void splitPlanToTeams(Plan aPlan)
         {
-            eatPlanByWorkers(plan.copy());
-        }
-
-        private void eatPlanByWorkers(Plan aTempPlan)
-        {
-            while (aTempPlan.isNotEmpty())
+            while (aPlan.isNotEmpty())
             {
-                foreach (KeyValuePair<string, Worker> workerPair in workers)
+                foreach (KeyValuePair<string, Team> teamPair in teams)
                 {
-                    Worker aWorker = (Worker) workerPair.Value;
-                    aWorker.eatPlan(aTempPlan);
-                    if (!aTempPlan.isNotEmpty())
+                    Team aTeam = (Team)teamPair.Value;
+                    aTeam.splitPlan(aPlan);
+                    if (!aPlan.isNotEmpty())
                     {
                         break;
                     }
                 }
+
             }
         }
     }
