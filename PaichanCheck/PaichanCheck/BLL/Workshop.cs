@@ -21,7 +21,7 @@ namespace PaichanCheck.BLL
             {
                 foreach (KeyValuePair<string, Team> teamPair in teams)
                 {
-                    Team aTeam = (Team)teamPair.Value;
+                    Team aTeam = teamPair.Value;
                     aTeam.splitPlan(aPlan);
                     if (!aPlan.isNotEmpty())
                     {
